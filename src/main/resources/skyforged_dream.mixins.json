@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "github.arovchinnikov.skyforged_dream.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ExampleMixin",
+    "client.ItemStackMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "client.InGameHoodMixin"
+  ]
+}

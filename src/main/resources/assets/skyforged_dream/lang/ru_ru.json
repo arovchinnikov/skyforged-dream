@@ -1,0 +1,11 @@
+{
+  "rarity.skyforged_dream.common": "Common",
+  "rarity.skyforged_dream.mythic": "Mythical",
+
+  "item_group.skyforged_dream.items": "SD: Items",
+
+  "item.skyforged_dream.dark_silver_ore": "Рудное тёмное серебро",
+  "item.skyforged_dream.dark_silver_ingot": "Слиток тёмного серебра",
+
+  "block.skyforged_dream.dark_silver_block": "Блок тёмного серебра"
+}

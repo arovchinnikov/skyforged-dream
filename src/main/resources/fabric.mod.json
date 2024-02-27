@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "skyforged_dream",
+	"version": "${version}",
+	"name": "Skyforged Dream",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Artem Ovchinnikov"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skyforged_dream/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.arovchinnikov.skyforged_dream.SkyforgedDream"
+		],
+		"fabric-datagen": [
+			"github.arovchinnikov.skyforged_dream.SkyforgedDreamDataGenerator"
+		]
+	},
+	"mixins": [
+		"skyforged_dream.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
