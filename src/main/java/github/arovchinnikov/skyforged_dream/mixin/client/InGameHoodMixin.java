@@ -3,7 +3,6 @@ package github.arovchinnikov.skyforged_dream.mixin.client;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalRef;
 import github.arovchinnikov.skyforged_dream.item.base.IHasRarity;
-import github.arovchinnikov.skyforged_dream.item.base.ModItem;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.item.ItemStack;

@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.block.base;
 
-import github.arovchinnikov.skyforged_dream.item.ModRarity;
+import github.arovchinnikov.skyforged_dream.item.ItemRarity;
 import github.arovchinnikov.skyforged_dream.item.base.ModBlockItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -10,10 +10,10 @@ public class ModBlock extends Block {
     private final ModBlockItem blockItem;
 
     public ModBlock(BlockReference reference) {
-        this(reference, ModRarity.COMMON, false);
+        this(FabricBlockSettings.copyOf(reference.getSettings()), ItemRarity.COMMON, false);
     }
-    public ModBlock(BlockReference reference, ModRarity rarity, boolean hasDescription) {
-        super(FabricBlockSettings.copyOf(reference.getSettings()));
+    public ModBlock(Settings settings, ItemRarity rarity, boolean hasDescription) {
+        super(settings);
 
         this.blockItem = new ModBlockItem(this, new FabricItemSettings(), rarity, hasDescription);
     }

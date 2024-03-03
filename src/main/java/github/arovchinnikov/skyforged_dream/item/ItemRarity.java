@@ -5,15 +5,17 @@ import github.arovchinnikov.skyforged_dream.client.ModColor;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 
-import java.awt.*;
-
-public enum ModRarity {
+public enum ItemRarity {
     COMMON(ModColor.WHITE, "common"),
-    MYTHICAL(ModColor.ORANGE, "mythic");
+    RARE(ModColor.GREEN, "rare"),
+    LEGENDARY(ModColor.ORANGE, "legendary"),
+    MYTHICAL(ModColor.ORANGE, "mythic"),
+    RELIC(ModColor.DARK_RED, "relic");
+
     private final ModColor color;
     private final String name;
 
-    ModRarity(ModColor color, String name) {
+    ItemRarity(ModColor color, String name) {
         this.color = color;
         this.name = name;
     }

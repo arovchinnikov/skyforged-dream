@@ -2,8 +2,9 @@ package github.arovchinnikov.skyforged_dream.mixin.client;
 
 import github.arovchinnikov.skyforged_dream.client.ModColor;
 import github.arovchinnikov.skyforged_dream.item.base.IHasRarity;
-import github.arovchinnikov.skyforged_dream.item.base.ModItem;
-import github.arovchinnikov.skyforged_dream.item.ModRarity;
+import github.arovchinnikov.skyforged_dream.item.ItemRarity;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,6 +28,7 @@ public abstract class ItemStackMixin {
 
     // Replace name in inventories for mod items
     @Inject(at = @At("RETURN"), method = "getTooltip")
+    @Environment(EnvType.CLIENT)
     private void onRenderTooltip(PlayerEntity player, TooltipContext context, CallbackInfoReturnable<List<Text>> cir) {
         if (this.getItem() instanceof IHasRarity item) {
             List<Text> defaultReturn = cir.getReturnValue();
@@ -35,7 +37,7 @@ public abstract class ItemStackMixin {
                 .append(this.getName())
                 .withColor(item.getRarity().getColor().getRGB());
 
-            if (item.getRarity() != ModRarity.COMMON && Screen.hasShiftDown()) {
+            if (item.getRarity() != ItemRarity.COMMON && Screen.hasShiftDown()) {
                 MutableText rarityDescription = Text.empty()
                     .append(" - ")
                     .append(item.getRarity().getTranslation())

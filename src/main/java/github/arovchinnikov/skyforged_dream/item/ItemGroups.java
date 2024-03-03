@@ -12,16 +12,15 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ItemGroups {
-    public static final RegistryKey<ItemGroup> ITEMS_GROUP = makeKey("items");
+    public static final RegistryKey<ItemGroup> MAIN_GROUP = RegistryKey.of(
+        RegistryKeys.ITEM_GROUP,
+        new Identifier(SkyforgedDream.MOD_ID, "main")
+    );
 
     public static void register() {
-        Registry.register(Registries.ITEM_GROUP, ITEMS_GROUP, FabricItemGroup.builder()
-            .displayName(Text.translatable("item_group.skyforged_dream.items"))
-            .icon(() -> new ItemStack(Items.DARK_SILVER_INGOT.get()))
+        Registry.register(Registries.ITEM_GROUP, MAIN_GROUP, FabricItemGroup.builder()
+            .displayName(Text.translatable("item_group.skyforged_dream.main"))
+            .icon(() -> new ItemStack(Items.BLACK_PEARL.get()))
             .build());
-    }
-
-    private static RegistryKey<ItemGroup> makeKey(String name) {
-        return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(SkyforgedDream.MOD_ID, name));
     }
 }

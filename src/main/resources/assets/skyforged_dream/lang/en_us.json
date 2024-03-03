@@ -1,11 +1,17 @@
 {
-  "rarity.skyforged_dream.common": "Common",
-  "rarity.skyforged_dream.mythic": "Mythical",
+  "item_group.skyforged_dream.main": "Skyforged Dream",
 
-  "item_group.skyforged_dream.items": "SD: Items",
+  "rarity.skyforged_dream.rare": "rare",
+  "rarity.skyforged_dream.epic": "epic",
+  "rarity.skyforged_dream.legendary": "legendary",
+  "rarity.skyforged_dream.mythic": "mythical",
+  "rarity.skyforged_dream.relic": "relic",
 
-  "item.skyforged_dream.dark_silver_ore": "Dark Silver Ore",
-  "item.skyforged_dream.dark_silver_ingot": "Dark Silver Ingot",
+  "item.skyforged_dream.pearl": "Pearl",
+  "item.skyforged_dream.black_pearl": "Black Pearl",
+  "item.skyforged_dream.black_pearl.description": "Looks like an ordinary pearl, even if it is black,|but for some reason it is unpleasant to hold it in your hands.",
+  "item.skyforged_dream.pearl_dust": "Pearl Dust",
 
-  "block.skyforged_dream.dark_silver_block": "Dark Silver Block"
+  "block.skyforged_dream.pearl_shell": "Pearl Shell",
+  "block.skyforged_dream.pearl_shell.description": "There's something inside! Is it possible to open it with something?"
 }

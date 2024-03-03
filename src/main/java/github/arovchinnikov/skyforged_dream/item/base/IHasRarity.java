@@ -1,7 +1,7 @@
 package github.arovchinnikov.skyforged_dream.item.base;
 
-import github.arovchinnikov.skyforged_dream.item.ModRarity;
+import github.arovchinnikov.skyforged_dream.item.ItemRarity;
 
 public interface IHasRarity {
-    public ModRarity getRarity();
+    public ItemRarity getRarity();
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "skyforged_dream:block/pearl_shell"
+    },
+    "facing=south": {
+      "model": "skyforged_dream:block/pearl_shell",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skyforged_dream:block/pearl_shell",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "skyforged_dream:block/pearl_shell",
+      "y": 90
+    }
+  }
+}

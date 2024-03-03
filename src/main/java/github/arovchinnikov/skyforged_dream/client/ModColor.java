@@ -3,10 +3,13 @@ package github.arovchinnikov.skyforged_dream.client;
 import java.awt.*;
 
 public enum ModColor {
-    WHITE(new Color(245, 245, 245)),
     LIGHT_GREY(new Color(190, 190, 190)),
-    ORANGE(new Color(211, 103, 7)),
-    DARK_RED(new Color(244, 0, 0));
+    WHITE(new Color(245, 245, 245)),
+    GREEN(new Color(75, 213, 71)),
+    BLUE(new Color(59, 145, 255)),
+    ORANGE(new Color(255, 144, 31)),
+    DARK_ORANGE(new Color(187, 67, 0)),
+    DARK_RED(new Color(173, 0, 0));
 
     private final Color color;
 

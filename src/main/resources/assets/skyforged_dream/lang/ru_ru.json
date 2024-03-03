@@ -1,11 +1,17 @@
 {
-  "rarity.skyforged_dream.common": "Common",
-  "rarity.skyforged_dream.mythic": "Mythical",
+  "item_group.skyforged_dream.main": "Skyforged Dream",
 
-  "item_group.skyforged_dream.items": "SD: Items",
+  "rarity.skyforged_dream.rare": "редкое",
+  "rarity.skyforged_dream.epic": "эпическое",
+  "rarity.skyforged_dream.legendary": "легендарное",
+  "rarity.skyforged_dream.mythic": "мифическое",
+  "rarity.skyforged_dream.relic": "реликвия",
 
-  "item.skyforged_dream.dark_silver_ore": "Рудное тёмное серебро",
-  "item.skyforged_dream.dark_silver_ingot": "Слиток тёмного серебра",
+  "item.skyforged_dream.pearl": "Жемчужина",
+  "item.skyforged_dream.black_pearl": "Черная жемчужина",
+  "item.skyforged_dream.black_pearl.description": "С виду это обычная жемчужина, пусть и черного цвета,|но держать ее в руках почему-то неприятно.",
+  "item.skyforged_dream.pearl_dust": "Жемчужная пыль",
 
-  "block.skyforged_dream.dark_silver_block": "Блок тёмного серебра"
+  "block.skyforged_dream.pearl_shell": "Раковина с жемчужиной",
+  "block.skyforged_dream.pearl_shell.description": "Внутри что-то есть! Возможно получится её чем-то вскрыть?"
 }

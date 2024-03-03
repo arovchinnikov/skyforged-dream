@@ -3,6 +3,7 @@ package github.arovchinnikov.skyforged_dream.block;
 import github.arovchinnikov.skyforged_dream.SkyforgedDream;
 import github.arovchinnikov.skyforged_dream.block.base.BlockReference;
 import github.arovchinnikov.skyforged_dream.block.base.ModBlock;
+import github.arovchinnikov.skyforged_dream.block.resource.PearlShell;
 import github.arovchinnikov.skyforged_dream.item.ItemGroups;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.registry.Registries;
@@ -13,7 +14,7 @@ import java.util.Arrays;
 import java.util.function.Supplier;
 
 public enum Blocks {
-    DARK_SILVER_BLOCK("dark_silver_block", () -> new ModBlock(BlockReference.IRON_BLOCK));
+    PEARL_SHELL("pearl_shell", PearlShell::new);
 
     public final String name;
     public final Supplier<ModBlock> blockSupplier;
@@ -36,7 +37,7 @@ public enum Blocks {
             Registry.register(Registries.ITEM, new Identifier(SkyforgedDream.MOD_ID, value.name), value.get().getBlockItem());
         }
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.ITEMS_GROUP).register(entries -> entries.addAll(
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.MAIN_GROUP).register(entries -> entries.addAll(
             Arrays.stream(Blocks.values()).map(item -> item.get().asItem().getDefaultStack()).toList()
         ));
     }
