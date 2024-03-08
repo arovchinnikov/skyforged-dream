@@ -20,8 +20,8 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(Items.PEARL.get(), Models.GENERATED);
-        itemModelGenerator.register(Items.PEARL_DUST.get(), Models.GENERATED);
-        itemModelGenerator.register(Items.BLACK_PEARL.get(), Models.GENERATED);
+        itemModelGenerator.register(Items.PEARL.item(), Models.GENERATED);
+        itemModelGenerator.register(Items.PEARL_DUST.item(), Models.GENERATED);
+        itemModelGenerator.register(Items.BLACK_PEARL.item(), Models.GENERATED);
     }
 }

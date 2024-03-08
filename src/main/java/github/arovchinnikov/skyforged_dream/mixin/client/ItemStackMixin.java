@@ -1,8 +1,9 @@
 package github.arovchinnikov.skyforged_dream.mixin.client;
 
-import github.arovchinnikov.skyforged_dream.client.ModColor;
-import github.arovchinnikov.skyforged_dream.item.base.IHasRarity;
+import github.arovchinnikov.skyforged_dream.client.Colors;
 import github.arovchinnikov.skyforged_dream.item.ItemRarity;
+import github.arovchinnikov.skyforged_dream.item.base.RegisteredItem;
+import github.arovchinnikov.skyforged_dream.item.RegisteredItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
@@ -12,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
+import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -30,23 +32,26 @@ public abstract class ItemStackMixin {
     @Inject(at = @At("RETURN"), method = "getTooltip")
     @Environment(EnvType.CLIENT)
     private void onRenderTooltip(PlayerEntity player, TooltipContext context, CallbackInfoReturnable<List<Text>> cir) {
-        if (this.getItem() instanceof IHasRarity item) {
-            List<Text> defaultReturn = cir.getReturnValue();
-
-            MutableText mutableText = Text.empty()
-                .append(this.getName())
-                .withColor(item.getRarity().getColor().getRGB());
-
-            if (item.getRarity() != ItemRarity.COMMON && Screen.hasShiftDown()) {
-                MutableText rarityDescription = Text.empty()
-                    .append(" - ")
-                    .append(item.getRarity().getTranslation())
-                    .withColor(ModColor.LIGHT_GREY.getRGB());
-
-                mutableText.append(rarityDescription);
-            }
-
-            defaultReturn.set(0, mutableText);
+        @Nullable RegisteredItem item = RegisteredItems.find(this.getItem());
+        if (item == null) {
+            return;
         }
+
+        List<Text> defaultReturn = cir.getReturnValue();
+
+        MutableText mutableText = Text.empty()
+            .append(this.getName())
+            .withColor(item.settings().getRarity().getColor().getRGB());
+
+        if (item.settings().getRarity() != ItemRarity.COMMON && Screen.hasShiftDown()) {
+            MutableText rarityDescription = Text.empty()
+                .append(" - ")
+                .append(item.settings().getRarity().getTranslation())
+                .withColor(Colors.LIGHT_GREY.getRGB());
+
+            mutableText.append(rarityDescription);
+        }
+
+        defaultReturn.set(0, mutableText);
     }
 }

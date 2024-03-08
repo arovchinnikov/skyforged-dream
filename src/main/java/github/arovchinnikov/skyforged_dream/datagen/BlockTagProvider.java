@@ -16,6 +16,6 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-            .add(Blocks.PEARL_SHELL.get());
+            .add(Blocks.PEARL_SHELL.block());
     }
 }

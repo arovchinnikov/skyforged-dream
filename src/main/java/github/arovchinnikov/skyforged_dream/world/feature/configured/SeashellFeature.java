@@ -11,7 +11,6 @@ import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.util.FeatureContext;
 
-
 public class SeashellFeature extends Feature<SeashellFeatureConfig> {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
@@ -35,7 +34,7 @@ public class SeashellFeature extends Feature<SeashellFeatureConfig> {
                 return false;
             }
             
-            world.setBlockState(pos, Blocks.PEARL_SHELL.get().getDefaultState().with(FACING, getRandomDirection(random)), 3);
+            world.setBlockState(pos, Blocks.PEARL_SHELL.block().getDefaultState().with(FACING, getRandomDirection(random)), 3);
 
             return true;
         }

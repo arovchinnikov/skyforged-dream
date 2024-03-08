@@ -13,6 +13,6 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(Blocks.PEARL_SHELL.get());
+        addDrop(Blocks.PEARL_SHELL.block());
     }
 }

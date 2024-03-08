@@ -20,7 +20,7 @@ public class ItemGroups {
     public static void register() {
         Registry.register(Registries.ITEM_GROUP, MAIN_GROUP, FabricItemGroup.builder()
             .displayName(Text.translatable("item_group.skyforged_dream.main"))
-            .icon(() -> new ItemStack(Items.BLACK_PEARL.get()))
+            .icon(() -> new ItemStack(Items.BLACK_PEARL.item()))
             .build());
     }
 }
