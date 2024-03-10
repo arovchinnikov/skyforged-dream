@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.block.resource;
 
-import github.arovchinnikov.skyforged_dream.helper.ItemHelper;
+import github.arovchinnikov.skyforged_dream.util.helper.ItemHelper;
 import github.arovchinnikov.skyforged_dream.item.Items;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;

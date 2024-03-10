@@ -1,4 +1,4 @@
-package github.arovchinnikov.skyforged_dream.datagen;
+package github.arovchinnikov.skyforged_dream.datagen.provider;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;

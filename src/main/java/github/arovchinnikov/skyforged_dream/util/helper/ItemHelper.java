@@ -1,4 +1,4 @@
-package github.arovchinnikov.skyforged_dream.helper;
+package github.arovchinnikov.skyforged_dream.util.helper;
 
 import net.minecraft.item.*;
 

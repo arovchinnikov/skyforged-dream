@@ -11,7 +11,12 @@
   "item.skyforged_dream.black_pearl": "Черная жемчужина",
   "item.skyforged_dream.black_pearl.description": "С виду это обычная жемчужина, пусть и черного цвета,|но держать ее в руках почему-то неприятно.",
   "item.skyforged_dream.pearl_dust": "Жемчужная пыль",
+  "item.skyforged_dream.raw_anadium": "Рудный анадий",
+  "item.skyforged_dream.raw_anadium.description": "Чрезвычайно токсичный металл, вызывающий удушение",
 
   "block.skyforged_dream.pearl_shell": "Раковина с жемчужиной",
-  "block.skyforged_dream.pearl_shell.description": "Внутри что-то есть! Возможно получится её чем-то вскрыть?"
+  "block.skyforged_dream.pearl_shell.description": "Внутри что-то есть! Возможно получится её чем-то вскрыть?",
+  "block.skyforged_dream.deepslate_anadium_ore_block": "Анадиевый глубинный сланец",
+
+  "effect.skyforged_dream.anadium_poison": "Отравление анадием"
 }

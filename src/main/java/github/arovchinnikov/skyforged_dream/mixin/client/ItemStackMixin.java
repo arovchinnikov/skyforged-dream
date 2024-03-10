@@ -1,7 +1,7 @@
 package github.arovchinnikov.skyforged_dream.mixin.client;
 
-import github.arovchinnikov.skyforged_dream.client.Colors;
-import github.arovchinnikov.skyforged_dream.item.ItemRarity;
+import github.arovchinnikov.skyforged_dream.util.Color;
+import github.arovchinnikov.skyforged_dream.util.Rarity;
 import github.arovchinnikov.skyforged_dream.item.base.RegisteredItem;
 import github.arovchinnikov.skyforged_dream.item.RegisteredItems;
 import net.fabricmc.api.EnvType;
@@ -43,11 +43,11 @@ public abstract class ItemStackMixin {
             .append(this.getName())
             .withColor(item.settings().getRarity().getColor().getRGB());
 
-        if (item.settings().getRarity() != ItemRarity.COMMON && Screen.hasShiftDown()) {
+        if (item.settings().getRarity() != Rarity.COMMON && Screen.hasShiftDown()) {
             MutableText rarityDescription = Text.empty()
                 .append(" - ")
                 .append(item.settings().getRarity().getTranslation())
-                .withColor(Colors.LIGHT_GREY.getRGB());
+                .withColor(Color.LIGHT_GREY.getRGB());
 
             mutableText.append(rarityDescription);
         }

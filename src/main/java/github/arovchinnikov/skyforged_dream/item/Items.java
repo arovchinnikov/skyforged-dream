@@ -4,6 +4,7 @@ import github.arovchinnikov.skyforged_dream.SkyforgedDream;
 import github.arovchinnikov.skyforged_dream.item.base.RegisteredItem;
 import github.arovchinnikov.skyforged_dream.item.base.ModItem;
 import github.arovchinnikov.skyforged_dream.item.base.Settings;
+import github.arovchinnikov.skyforged_dream.util.Rarity;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Item;
@@ -15,8 +16,9 @@ import java.util.Arrays;
 import java.util.function.Supplier;
 
 public enum Items implements RegisteredItem {
+    RAW_ANADIUM("raw_anadium", ModItem::new, new Settings().withDescription()),
     PEARL("pearl", ModItem::new),
-    BLACK_PEARL("black_pearl", ModItem::new, new Settings().withDescription().withRarity(ItemRarity.LEGENDARY)),
+    BLACK_PEARL("black_pearl", ModItem::new, new Settings().withDescription().withRarity(Rarity.LEGENDARY)),
     PEARL_DUST("pearl_dust", ModItem::new);
 
     private final String name;

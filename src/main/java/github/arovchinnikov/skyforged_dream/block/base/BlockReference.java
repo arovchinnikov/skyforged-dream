@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 public enum BlockReference {
     WOOD(Blocks.OAK_WOOD),
     IRON_BLOCK(Blocks.IRON_BLOCK),
+    DEEPSLATE(Blocks.DEEPSLATE),
     STONE(Blocks.STONE);
     private final AbstractBlock.Settings settings;
 

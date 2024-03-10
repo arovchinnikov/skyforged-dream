@@ -1,6 +1,6 @@
-package github.arovchinnikov.skyforged_dream.helper;
+package github.arovchinnikov.skyforged_dream.util.helper;
 
-import github.arovchinnikov.skyforged_dream.client.Colors;
+import github.arovchinnikov.skyforged_dream.util.Color;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 
@@ -11,7 +11,7 @@ public class TooltipHelper {
         String[] rows = description.getString().split("\\|");
 
         for (String row : rows) {
-            tooltips.add(Text.literal(row).withColor(Colors.LIGHT_GREY.getRGB()));
+            tooltips.add(Text.literal(row).withColor(Color.LIGHT_GREY.getRGB()));
         }
     }
 }

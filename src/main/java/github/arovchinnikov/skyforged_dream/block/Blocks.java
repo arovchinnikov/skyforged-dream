@@ -1,6 +1,8 @@
 package github.arovchinnikov.skyforged_dream.block;
 
 import github.arovchinnikov.skyforged_dream.SkyforgedDream;
+import github.arovchinnikov.skyforged_dream.block.base.BlockReference;
+import github.arovchinnikov.skyforged_dream.block.resource.DeepslateAnadiumOre;
 import github.arovchinnikov.skyforged_dream.block.resource.PearlShell;
 import github.arovchinnikov.skyforged_dream.item.ItemGroups;
 import github.arovchinnikov.skyforged_dream.item.RegisteredItems;
@@ -9,6 +11,7 @@ import github.arovchinnikov.skyforged_dream.item.base.Settings;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
+import net.minecraft.block.MossBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -19,6 +22,7 @@ import java.util.Arrays;
 import java.util.function.Supplier;
 
 public enum Blocks implements RegisteredItem {
+    DEEPSLATE_ANADIUM_ORE("deepslate_anadium_ore_block", DeepslateAnadiumOre::new, new Settings()),
     PEARL_SHELL("pearl_shell", PearlShell::new, new Settings().withDescription());
 
     public final String name;

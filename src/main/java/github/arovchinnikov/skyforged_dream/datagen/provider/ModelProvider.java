@@ -1,4 +1,4 @@
-package github.arovchinnikov.skyforged_dream.datagen;
+package github.arovchinnikov.skyforged_dream.datagen.provider;
 
 import github.arovchinnikov.skyforged_dream.block.Blocks;
 import github.arovchinnikov.skyforged_dream.item.Items;
@@ -15,7 +15,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(Blocks.DEEPSLATE_ANADIUM_ORE.block());
     }
 
     @Override
@@ -23,5 +23,6 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Items.PEARL.item(), Models.GENERATED);
         itemModelGenerator.register(Items.PEARL_DUST.item(), Models.GENERATED);
         itemModelGenerator.register(Items.BLACK_PEARL.item(), Models.GENERATED);
+        itemModelGenerator.register(Items.RAW_ANADIUM.item(), Models.GENERATED);
     }
 }

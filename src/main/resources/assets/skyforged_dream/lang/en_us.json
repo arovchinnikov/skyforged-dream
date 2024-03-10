@@ -11,7 +11,12 @@
   "item.skyforged_dream.black_pearl": "Black Pearl",
   "item.skyforged_dream.black_pearl.description": "Looks like an ordinary pearl, even if it is black,|but for some reason it is unpleasant to hold it in your hands.",
   "item.skyforged_dream.pearl_dust": "Pearl Dust",
+  "item.skyforged_dream.raw_anadium": "Raw Anadium",
+  "item.skyforged_dream.raw_anadium.description": "Extremely toxic metal that causes suffocation",
 
   "block.skyforged_dream.pearl_shell": "Pearl Shell",
-  "block.skyforged_dream.pearl_shell.description": "There's something inside! Is it possible to open it with something?"
+  "block.skyforged_dream.pearl_shell.description": "There's something inside! Is it possible to open it with something?",
+  "block.skyforged_dream.deepslate_anadium_ore_block": "Deepslate Anadium Ore",
+
+  "effect.skyforged_dream.anadium_poison": "Anadium Poison"
 }

@@ -1,10 +1,10 @@
 package github.arovchinnikov.skyforged_dream.item.base;
 
-import github.arovchinnikov.skyforged_dream.item.ItemRarity;
+import github.arovchinnikov.skyforged_dream.util.Rarity;
 public class Settings {
     private int burnTime = 0;
     private boolean hasDescription = false;
-    private ItemRarity rarity = ItemRarity.COMMON;
+    private Rarity rarity = Rarity.COMMON;
 
     public Settings withBurnTime(int time) {
         this.burnTime = time;
@@ -16,7 +16,7 @@ public class Settings {
         return this;
     }
 
-    public Settings withRarity(ItemRarity rarity) {
+    public Settings withRarity(Rarity rarity) {
         this.rarity = rarity;
         return this;
     }
@@ -29,7 +29,7 @@ public class Settings {
         return this.hasDescription;
     }
 
-    public ItemRarity getRarity() {
+    public Rarity getRarity() {
         return this.rarity;
     }
 }

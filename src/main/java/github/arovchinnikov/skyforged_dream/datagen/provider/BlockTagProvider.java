@@ -1,4 +1,4 @@
-package github.arovchinnikov.skyforged_dream.datagen;
+package github.arovchinnikov.skyforged_dream.datagen.provider;
 
 import github.arovchinnikov.skyforged_dream.block.Blocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -16,6 +16,10 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-            .add(Blocks.PEARL_SHELL.block());
+            .add(Blocks.PEARL_SHELL.block())
+            .add(Blocks.DEEPSLATE_ANADIUM_ORE.block());
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+            .add(Blocks.DEEPSLATE_ANADIUM_ORE.block());
     }
 }

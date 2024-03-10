@@ -1,6 +1,7 @@
 package github.arovchinnikov.skyforged_dream.world.biome;
 
 import github.arovchinnikov.skyforged_dream.world.feature.Features;
+import github.arovchinnikov.skyforged_dream.world.feature.PlacedFeatures;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.registry.RegistryKey;
@@ -14,5 +15,8 @@ public class BiomeUpdates {
             GenerationStep.Feature.VEGETAL_DECORATION,
             RegistryKey.of(RegistryKeys.PLACED_FEATURE, Features.PEARL_SHELL.getId())
         );
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+            GenerationStep.Feature.UNDERGROUND_ORES, PlacedFeatures.DEEPSLATE_ANADIUM_ORE.getKey());
     }
 }

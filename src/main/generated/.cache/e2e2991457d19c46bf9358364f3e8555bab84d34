@@ -1,4 +1,8 @@
-// 1.20.4	2024-03-08T16:54:06.7475953	Skyforged Dream/Model Definitions
+// 1.20.4	2024-03-10T16:59:11.9852965	Skyforged Dream/Model Definitions
 ff3c002cf4a38398e658ace346bac74d4e11f939 assets\skyforged_dream\models\item\pearl.json
+193eb7ed537cf750aaf204cdd0d8ebe5d993e56a assets\skyforged_dream\models\block\deepslate_anadium_ore_block.json
 49b0735f60cb123b159a9fad06fe8be8cd06514d assets\skyforged_dream\models\item\pearl_dust.json
 12a950a63ee70f039a014385e0358518a572c07c assets\skyforged_dream\models\item\black_pearl.json
+f1d2df4f159224b00ca0b4593430c10f49a4528d assets\skyforged_dream\models\item\deepslate_anadium_ore_block.json
+37b7a486a3e2a2b56b9bb72149fbe7cde6cd9acd assets\skyforged_dream\blockstates\deepslate_anadium_ore_block.json
+ec7c77e1611a093573ebda5d48a4a75f7e29070c assets\skyforged_dream\models\item\raw_anadium.json
