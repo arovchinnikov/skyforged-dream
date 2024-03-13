@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.client;
 
-import github.arovchinnikov.skyforged_dream.entity.EntityRenderers;
+import github.arovchinnikov.skyforged_dream.client.render.EntityRenderers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

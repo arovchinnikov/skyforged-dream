@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.util;
 
-import github.arovchinnikov.skyforged_dream.SkyforgedDream;
+import github.arovchinnikov.skyforged_dream.mod.SkyforgedDream;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 

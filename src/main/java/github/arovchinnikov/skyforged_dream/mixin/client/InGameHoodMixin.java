@@ -2,8 +2,8 @@ package github.arovchinnikov.skyforged_dream.mixin.client;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalRef;
-import github.arovchinnikov.skyforged_dream.item.RegisteredItems;
-import github.arovchinnikov.skyforged_dream.item.base.RegisteredItem;
+import github.arovchinnikov.skyforged_dream.mod.item.RegisteredItems;
+import github.arovchinnikov.skyforged_dream.mod.item.base.RegisteredItem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;

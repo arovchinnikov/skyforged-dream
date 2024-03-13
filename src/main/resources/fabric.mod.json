@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"github.arovchinnikov.skyforged_dream.SkyforgedDream"
+          "github.arovchinnikov.skyforged_dream.mod.SkyforgedDream"
 		],
 		"client": [
 			"github.arovchinnikov.skyforged_dream.client.SkyforgedDreamClient"
 		],
 		"fabric-datagen": [
-			"github.arovchinnikov.skyforged_dream.datagen.SkyforgedDreamDataGenerator"
+			"github.arovchinnikov.skyforged_dream.util.datagen.SkyforgedDreamDataGenerator"
 		]
 	},
 	"mixins": [

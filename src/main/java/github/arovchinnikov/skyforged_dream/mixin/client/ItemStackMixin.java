@@ -2,8 +2,8 @@ package github.arovchinnikov.skyforged_dream.mixin.client;
 
 import github.arovchinnikov.skyforged_dream.util.Color;
 import github.arovchinnikov.skyforged_dream.util.Rarity;
-import github.arovchinnikov.skyforged_dream.item.base.RegisteredItem;
-import github.arovchinnikov.skyforged_dream.item.RegisteredItems;
+import github.arovchinnikov.skyforged_dream.mod.item.base.RegisteredItem;
+import github.arovchinnikov.skyforged_dream.mod.item.RegisteredItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
