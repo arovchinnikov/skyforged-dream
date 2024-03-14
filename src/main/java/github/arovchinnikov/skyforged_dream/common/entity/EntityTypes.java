@@ -1,0 +1,22 @@
+package github.arovchinnikov.skyforged_dream.common.entity;
+
+import github.arovchinnikov.skyforged_dream.SkyforgedDream;
+import github.arovchinnikov.skyforged_dream.common.entity.ambient.AnadiumPoisonCloud;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class EntityTypes {
+    public static final EntityType<AnadiumPoisonCloud> ANADIUM_POISON_CLOUD = Registry.register(
+        Registries.ENTITY_TYPE,
+        new Identifier(SkyforgedDream.MOD_ID, "anadium_poison_cloud"),
+        FabricEntityTypeBuilder.create(SpawnGroup.AMBIENT, AnadiumPoisonCloud::new).build()
+    );
+
+    public static void register() {
+        SkyforgedDream.LOGGER.debug("Entity types loaded");
+    }
+}

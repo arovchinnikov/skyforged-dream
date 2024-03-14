@@ -1,7 +1,7 @@
 package github.arovchinnikov.skyforged_dream.util.datagen.bootstrap;
 
-import github.arovchinnikov.skyforged_dream.mod.block.Blocks;
-import github.arovchinnikov.skyforged_dream.mod.world.feature.ConfiguredFeatures;
+import github.arovchinnikov.skyforged_dream.common.block.Blocks;
+import github.arovchinnikov.skyforged_dream.common.feature.ConfiguredFeatures;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.tag.BlockTags;
@@ -22,16 +22,14 @@ public class ConfiguredFeaturesData {
         register(
             context,
             ConfiguredFeatures.DEEPSLATE_ANADIUM_ORE.getKey(),
-            Feature.ORE,
             new OreFeatureConfig(overworldAnadium, 6)
         );
     }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(
         Registerable<ConfiguredFeature<?, ?>> context, RegistryKey<ConfiguredFeature<?, ?>> key,
-        F feature,
         FC configuration
     ) {
-        context.register(key, new ConfiguredFeature<>(feature, configuration));
+        context.register(key, new ConfiguredFeature<>((F) Feature.ORE, configuration));
     }
 }

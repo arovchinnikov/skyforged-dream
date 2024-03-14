@@ -1,8 +1,8 @@
 package github.arovchinnikov.skyforged_dream.util.datagen.bootstrap;
 
-import github.arovchinnikov.skyforged_dream.util.datagen.util.OrePlacement;
-import github.arovchinnikov.skyforged_dream.mod.world.feature.ConfiguredFeatures;
-import github.arovchinnikov.skyforged_dream.mod.world.feature.PlacedFeatures;
+import github.arovchinnikov.skyforged_dream.util.datagen.helper.OrePlacement;
+import github.arovchinnikov.skyforged_dream.common.feature.ConfiguredFeatures;
+import github.arovchinnikov.skyforged_dream.common.feature.PlacedFeatures;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;

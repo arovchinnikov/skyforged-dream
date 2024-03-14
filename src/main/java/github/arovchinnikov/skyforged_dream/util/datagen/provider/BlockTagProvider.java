@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.util.datagen.provider;
 
-import github.arovchinnikov.skyforged_dream.mod.block.Blocks;
+import github.arovchinnikov.skyforged_dream.common.block.Blocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

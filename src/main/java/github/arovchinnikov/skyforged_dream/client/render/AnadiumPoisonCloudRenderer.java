@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.client.render;
 
-import github.arovchinnikov.skyforged_dream.mod.entity.block.AnadiumPoisonCloud;
+import github.arovchinnikov.skyforged_dream.common.entity.ambient.AnadiumPoisonCloud;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
@@ -18,7 +18,14 @@ public class AnadiumPoisonCloudRenderer extends EntityRenderer<AnadiumPoisonClou
     }
 
     @Override
-    public void render(AnadiumPoisonCloud entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light) {
+    public void render(
+        AnadiumPoisonCloud entity,
+        float yaw,
+        float tickDelta,
+        MatrixStack matrices,
+        VertexConsumerProvider vertexConsumers,
+        int light
+    ) {
 
     }
 }

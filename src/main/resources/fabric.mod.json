@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "github.arovchinnikov.skyforged_dream.mod.SkyforgedDream"
+          "github.arovchinnikov.skyforged_dream.SkyforgedDream"
 		],
 		"client": [
 			"github.arovchinnikov.skyforged_dream.client.SkyforgedDreamClient"
