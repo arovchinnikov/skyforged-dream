@@ -1,12 +1,9 @@
 package github.arovchinnikov.skyforged_dream.common.block;
 
-import github.arovchinnikov.skyforged_dream.SkyforgedDream;
 import github.arovchinnikov.skyforged_dream.common.block.blocks.DeepslateAnadiumOre;
 import github.arovchinnikov.skyforged_dream.common.block.blocks.PearlShell;
-import github.arovchinnikov.skyforged_dream.common.item.ItemGroups;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItems;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItem;
-import github.arovchinnikov.skyforged_dream.common.item.Settings;
+import github.arovchinnikov.skyforged_dream.common.item.*;
+import github.arovchinnikov.skyforged_dream.util.ModId;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
@@ -14,12 +11,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
 
-public enum Blocks implements RegisteredItem {
+public enum Blocks implements ConfiguredItem {
     DEEPSLATE_ANADIUM_ORE("deepslate_anadium_ore_block", DeepslateAnadiumOre::new, new Settings()),
     PEARL_SHELL("pearl_shell", PearlShell::new, new Settings().withDescription());
 
@@ -41,9 +37,9 @@ public enum Blocks implements RegisteredItem {
 
     public static void register() {
         for (Blocks value : values()) {
-            Registry.register(Registries.BLOCK, new Identifier(SkyforgedDream.MOD_ID, value.name), value.block());
-            Registry.register(Registries.ITEM, new Identifier(SkyforgedDream.MOD_ID, value.name), value.item());
-            RegisteredItems.append(value.block.getTranslationKey(), value);
+            Registry.register(Registries.BLOCK, ModId.get(value.name), value.block());
+            Registry.register(Registries.ITEM, ModId.get(value.name), value.item());
+            Items.ConfiguredItemRegistry.append(value.block.getTranslationKey(), value);
         }
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.MAIN_GROUP).register(entries -> entries.addAll(

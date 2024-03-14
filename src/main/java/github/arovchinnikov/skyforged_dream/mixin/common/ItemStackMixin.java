@@ -1,9 +1,9 @@
 package github.arovchinnikov.skyforged_dream.mixin.common;
 
+import github.arovchinnikov.skyforged_dream.common.item.Items;
 import github.arovchinnikov.skyforged_dream.util.Color;
 import github.arovchinnikov.skyforged_dream.util.Rarity;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItem;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItems;
+import github.arovchinnikov.skyforged_dream.common.item.ConfiguredItem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
@@ -32,7 +32,7 @@ public abstract class ItemStackMixin {
     @Inject(at = @At("RETURN"), method = "getTooltip")
     @Environment(EnvType.CLIENT)
     private void onRenderTooltip(PlayerEntity player, TooltipContext context, CallbackInfoReturnable<List<Text>> cir) {
-        @Nullable RegisteredItem item = RegisteredItems.find(this.getItem());
+        @Nullable ConfiguredItem item = Items.ConfiguredItemRegistry.find(this.getItem());
         if (item == null) {
             return;
         }

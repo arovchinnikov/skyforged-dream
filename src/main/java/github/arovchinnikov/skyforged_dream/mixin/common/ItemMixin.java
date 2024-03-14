@@ -1,8 +1,8 @@
 package github.arovchinnikov.skyforged_dream.mixin.common;
 
+import github.arovchinnikov.skyforged_dream.common.item.Items;
 import github.arovchinnikov.skyforged_dream.util.helper.TooltipHelper;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItem;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItems;
+import github.arovchinnikov.skyforged_dream.common.item.ConfiguredItem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
@@ -31,7 +31,7 @@ public abstract class ItemMixin {
     public List<Text> onAppendTooltip(
         List<Text> value
     ) {
-        @Nullable RegisteredItem item = RegisteredItems.findByKey(getTranslationKey());
+        @Nullable ConfiguredItem item = Items.ConfiguredItemRegistry.findByKey(getTranslationKey());
         if (item == null) {
             return value;
         }

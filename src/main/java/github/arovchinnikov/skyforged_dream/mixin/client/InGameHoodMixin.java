@@ -2,8 +2,8 @@ package github.arovchinnikov.skyforged_dream.mixin.client;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalRef;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItems;
-import github.arovchinnikov.skyforged_dream.common.item.RegisteredItem;
+import github.arovchinnikov.skyforged_dream.common.item.Items;
+import github.arovchinnikov.skyforged_dream.common.item.ConfiguredItem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
@@ -30,7 +30,7 @@ public class InGameHoodMixin {
     )
     @Environment(EnvType.CLIENT)
     private void setTooltip(DrawContext context, CallbackInfo ci, @Local LocalRef<MutableText> mutableText) {
-        @Nullable RegisteredItem item = RegisteredItems.find(currentStack.getItem());
+        @Nullable ConfiguredItem item = Items.ConfiguredItemRegistry.find(currentStack.getItem());
         if (item == null) {
             return;
         }

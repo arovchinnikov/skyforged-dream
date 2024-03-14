@@ -1,11 +1,10 @@
 package github.arovchinnikov.skyforged_dream.server.effect;
 
-import github.arovchinnikov.skyforged_dream.SkyforgedDream;
 import github.arovchinnikov.skyforged_dream.server.effect.harmfull.AnadiumPoison;
+import github.arovchinnikov.skyforged_dream.util.ModId;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 
 import java.util.function.Supplier;
 
@@ -22,7 +21,7 @@ public enum StatusEffects {
 
     public static void register() {
         for (StatusEffects value : values()) {
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(SkyforgedDream.MOD_ID, value.id()), value.effect());
+            Registry.register(Registries.STATUS_EFFECT, ModId.get(value.id), value.effect());
         }
     }
 

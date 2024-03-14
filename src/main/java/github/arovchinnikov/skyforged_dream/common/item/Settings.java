@@ -1,6 +1,7 @@
 package github.arovchinnikov.skyforged_dream.common.item;
 
 import github.arovchinnikov.skyforged_dream.util.Rarity;
+
 public class Settings {
     private int burnTime = 0;
     private boolean hasDescription = false;

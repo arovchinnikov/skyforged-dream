@@ -3,7 +3,7 @@ plugins {
 	id 'maven-publish'
 }
 
-version = project.mod_version
+version = project.version
 group = project.maven_group
 
 base {
@@ -11,6 +11,7 @@ base {
 }
 
 repositories {
+	maven { url "https://maven.terraformersmc.com/releases"}
 }
 
 fabricApi {
@@ -22,6 +23,8 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	modApi "com.terraformersmc:modmenu:9.0.0"
 }
 
 processResources {

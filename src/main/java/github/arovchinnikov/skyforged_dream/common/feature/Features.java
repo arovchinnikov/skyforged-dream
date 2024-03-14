@@ -1,8 +1,8 @@
 package github.arovchinnikov.skyforged_dream.common.feature;
 
-import github.arovchinnikov.skyforged_dream.SkyforgedDream;
 import github.arovchinnikov.skyforged_dream.common.feature.features.PearlShellFeature;
 import github.arovchinnikov.skyforged_dream.common.feature.features.PearlShellFeatureConfig;
+import github.arovchinnikov.skyforged_dream.util.ModId;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -18,7 +18,7 @@ public enum Features {
     private final Feature<? extends FeatureConfig> feature;
 
     Features(String name, Supplier<Feature<? extends FeatureConfig>> featureSupplier) {
-        this.id = new Identifier(SkyforgedDream.MOD_ID, name);
+        this.id = ModId.get(name);
         this.feature = featureSupplier.get();
     }
 

@@ -11,6 +11,7 @@ import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.util.FeatureContext;
 
+@SuppressWarnings("deprecation")
 public class PearlShellFeature extends Feature<PearlShellFeatureConfig> {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 

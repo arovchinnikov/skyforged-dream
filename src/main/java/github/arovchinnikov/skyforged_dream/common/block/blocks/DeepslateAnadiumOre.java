@@ -23,6 +23,7 @@ public class DeepslateAnadiumOre extends Block {
     public DeepslateAnadiumOre() {
         super(BlockMaterials.DEEPSLATE.settings.strength(3.8f, 6));
     }
+
     @Override
     public void onBlockBreakStart(BlockState state, World world, BlockPos pos, PlayerEntity player) {
         super.onBlockBreakStart(state, world, pos, player);
@@ -51,8 +52,7 @@ public class DeepslateAnadiumOre extends Block {
         World world,
         BlockPos pos,
         Explosion explosion,
-        BiConsumer<ItemStack,
-            BlockPos> stackMerger
+        BiConsumer<ItemStack, BlockPos> stackMerger
     ) {
         super.onExploded(state, world, pos, explosion, stackMerger);
 

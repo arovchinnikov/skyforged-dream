@@ -1,6 +1,6 @@
 package github.arovchinnikov.skyforged_dream.common.feature;
 
-import github.arovchinnikov.skyforged_dream.SkyforgedDream;
+import github.arovchinnikov.skyforged_dream.util.ModId;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -13,7 +13,7 @@ public enum ConfiguredFeatures {
     private RegistryKey<ConfiguredFeature<?, ?>> key;
 
     ConfiguredFeatures(String name) {
-        this.id = new Identifier(SkyforgedDream.MOD_ID, name);
+        this.id = ModId.get(name);
     }
 
     public static void register() {
