@@ -11,6 +11,7 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -35,7 +36,7 @@ public class PearlShell extends Block implements Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public PearlShell() {
-        super(BlockMaterials.STONE.settings.strength(0.2f, 0.2f));
+        super(BlockMaterials.BONE.settings.strength(0.2f, 0.2f));
         this.setDefaultState(this.stateManager.getDefaultState().
             with(FACING, Direction.NORTH)
             .with(WATERLOGGED, true));
@@ -58,6 +59,7 @@ public class PearlShell extends Block implements Waterloggable {
 
         if (0.8 > random.nextDouble()) {
             successOpen(world, pos, player, random);
+            player.incrementStat(Stats.USED.getOrCreateStat(stack.getItem()));
             return ActionResult.SUCCESS;
         }
 

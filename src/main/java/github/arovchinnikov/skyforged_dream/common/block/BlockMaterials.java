@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 
 public enum BlockMaterials {
+    BONE(Blocks.BONE_BLOCK),
     DEEPSLATE(Blocks.DEEPSLATE),
     STONE(Blocks.STONE);
 

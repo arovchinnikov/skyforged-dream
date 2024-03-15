@@ -4,7 +4,7 @@
   "rarity.skyforged_dream.rare": "rare",
   "rarity.skyforged_dream.epic": "epic",
   "rarity.skyforged_dream.legendary": "legendary",
-  "rarity.skyforged_dream.mythic": "mythical",
+  "rarity.skyforged_dream.mythical": "mythical",
   "rarity.skyforged_dream.relic": "relic",
 
   "item.skyforged_dream.pearl": "Pearl",
@@ -17,5 +17,7 @@
   "block.skyforged_dream.pearl_shell.description": "There's something inside! Is it possible to open it with something?",
   "block.skyforged_dream.deepslate_anadium_ore_block": "Deepslate Anadium Ore",
 
-  "effect.skyforged_dream.anadium_poison": "Anadium Poison"
+  "effect.skyforged_dream.anadium_poison": "Anadium Poison",
+
+  "common.skyforged_dream.crafted_by": "Crafted by: "
 }

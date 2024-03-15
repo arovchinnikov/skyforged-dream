@@ -4,7 +4,7 @@
   "rarity.skyforged_dream.rare": "редкое",
   "rarity.skyforged_dream.epic": "эпическое",
   "rarity.skyforged_dream.legendary": "легендарное",
-  "rarity.skyforged_dream.mythic": "мифическое",
+  "rarity.skyforged_dream.mythical": "мифическое",
   "rarity.skyforged_dream.relic": "реликвия",
 
   "item.skyforged_dream.pearl": "Жемчужина",
@@ -17,5 +17,6 @@
   "block.skyforged_dream.pearl_shell.description": "Внутри что-то есть! Возможно получится её чем-то вскрыть?",
   "block.skyforged_dream.deepslate_anadium_ore_block": "Анадиевый глубинный сланец",
 
-  "effect.skyforged_dream.anadium_poison": "Отравление анадием"
+  "effect.skyforged_dream.anadium_poison": "Отравление анадием",
+  "common.skyforged_dream.crafted_by": "Мастер: "
 }
